@@ -21,7 +21,7 @@ const ForgotPass = () => {
                 </div>
                 <Link to="/">Trở về</Link>
             </form>
-        </div>F
+        </div>
     </>
 }
 export default ForgotPass
