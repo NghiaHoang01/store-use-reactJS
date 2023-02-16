@@ -1,0 +1,30 @@
+@import url(//db.onlinewebfonts.com/c/924ee4158324c02e3e0d62e54cafd14f?family=Gotham+Book);
+
+:root {
+    --primary-color: #c91f28;
+    --dark-primary-color:#ca0711;
+    --orange: #fd401f;
+    --light-orange: #ff7b53;
+    --black: #000;
+    --white: #fff;
+    --font-color: #333;
+    --border: #d3d3d3;
+    --grey:#f9f9f9;
+    --dark-grey:#636363;
+    --primary-color-rgba: rgba(168, 18, 8, 0.7);
+    --black-rgba:rgba(0,0,0,0.6);
+    --white-rgba:rgba(255,255,255,0.5);
+    --font-color-light: #838383;
+    --yellow: yellow;
+    --green: rgb(81, 255, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gotham Book', sans-serif;
+}

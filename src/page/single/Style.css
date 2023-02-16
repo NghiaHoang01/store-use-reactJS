@@ -1,0 +1,384 @@
+/* single */
+.single {
+    margin-bottom: 40px;
+    padding: 0px 100px;
+    padding-top: 20px;
+}
+
+.single-item {
+    display: flex;
+    height: 480px;
+    overflow: hidden;
+}
+
+.single__img {
+    flex: 1;
+    margin-right: 10px;
+    display: flex;
+}
+
+.single__img-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.single__img-child__item {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    opacity: 0.5;
+}
+
+.bold {
+    opacity: 1;
+    border: 1px solid var(--dark-grey);
+}
+
+.single__img-child__item>img,
+.single__img-content>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.single__img-content {
+    flex: 7.5;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.single__content {
+    flex: 1.2;
+    margin-left: 10px;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.single__content-descrip {
+    padding-bottom: 10px;
+}
+
+.single__content-descrip>p:first-child {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: var(--black);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.single__content-descrip>p:nth-child(2) {
+    font-size: 18px;
+    color: var(--dark-primary-color);
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.single__content-descrip>p:last-child {
+    margin-bottom: 15px;
+    color: var(--dark-grey);
+    line-height: 1.5;
+    font-size: 16.5px;
+}
+
+.single__content-size>p,
+.single__content-quantity>p {
+    margin-bottom: 20px;
+    color: var(--font-color);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.single__content-size>label {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border: 1px solid var(--border);
+    margin-right: 15px;
+    border-radius: 50%;
+    color: var(--dark-grey);
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+@keyframes checked {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.single__content-size>input {
+    display: none;
+}
+
+.single__content-size>input:checked+label {
+    background-color: var(--black);
+    border: 1px solid var(--black);
+    color: var(--white);
+    animation: checked 0.25s linear;
+}
+
+.single__content-quantity {
+    margin: 26px 0px;
+}
+
+.single__content-quantity>button {
+    padding: 8px 15px;
+    font-size: 16.5px;
+    height: 100%;
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.single__content-quantity>button:hover {
+    background-color: var(--dark-primary-color);
+    border: 1px solid var(--dark-primary-color);
+}
+
+.single__content-quantity>input {
+    text-align: center;
+    padding: 8px 0px;
+    width: 42%;
+    height: 100%;
+    border: 1px solid var(--border);
+    background-color: transparent;
+    outline: none;
+    font-size: 16.5px;
+    border-radius: 2px;
+}
+
+.single__content-action {
+    padding-top: 10px;
+}
+
+.single__content-action>button {
+    position: relative;
+    height: 42px;
+    width: 170px;
+    border: none;
+    outline: none;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 16.5px;
+    border-radius: 2px;
+    font-size: "Gotham Book";
+    cursor: pointer;
+    margin-right: 24px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.single__content-action>button::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: translate(24%, 70%) rotate(-45deg);
+    background-color: var(--dark-primary-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.single__content-action>button:hover::before,
+.single__content-action>button:last-child:hover::before {
+    transform: translate(-50%, -20%) rotate(-45deg);
+    height: 450%;
+    width: 200%;
+}
+
+.single__content-action>button:last-child {
+    background-color: var(--dark-primary-color);
+    color: var(--white);
+}
+
+.single__content-action>button:last-child::before {
+    background-color: var(--black);
+    transform: translate(16%, 70%) rotate(-45deg);
+}
+
+.single-orther {
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.single-orther>p {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--font-color);
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.single-orther>p::before{
+    width: 6%;
+    height: 1px;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--dark-grey);
+}
+
+.single-orther__list-product{
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-orther__list-product__items {
+    width: 24%;
+    height: 350px;
+    padding: 15px;
+    box-shadow: inset -1px -1px #eee, -1px -1px #eee;
+    position: relative;
+    cursor: pointer;
+    animation: showProduct 1s ease;
+}
+
+.single-orther__list-product__items__img {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.single-orther__list-product__items__img:hover>a {
+    display: block;
+}
+
+.single-orther__list-product__items__img:hover .img-hover {
+    animation: changeImage 2s linear;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.single-orther__list-product__items__img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.8s;
+}
+
+.single-orther__list-product__items__img>a {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 86%;
+    border-radius: 2px;
+    animation: showDetail 0.5s linear;
+    display: none;
+    text-decoration: none;
+    background-color: var(--font-color);
+    padding: 7px 20px;
+    color: var(--white);
+    font-size: 12.5px;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+}
+
+.single-orther__list-product__items__img>a:hover {
+    background-color: var(--dark-primary-color);
+    color: var(--white);
+}
+
+.single-orther__list-product__items-content {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-orther__list-product__items-content__inf {
+    width: 85%;
+}
+
+.single-orther__list-product__items-content__inf>a {
+    text-decoration: none;
+}
+
+.single-orther__list-product__items-content__inf>a>p:first-child {
+    color: var(--font-color);
+    font-size: 15.5px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    letter-spacing: 1.2px;
+}
+
+.single-orther__list-product__items-content__inf>a>p:last-child {
+    color: var(--primary-color);
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.single-orther__list-product__items-content__cart {
+    width: 15%;
+    border-radius: 2px;
+    display: flex;
+    overflow: hidden;
+}
+
+.single-orther__list-product__items-content__cart:hover>a {
+    color: var(--white);
+}
+
+.single-orther__list-product__items-content__cart:hover>a::before {
+    transform: translate(-30%, -30%) rotate(-45deg);
+    height: 200%;
+    width: 200%;
+}
+
+.single-orther__list-product__items-content__cart>a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--font-color);
+    margin: auto;
+    font-size: 18px;
+    display: flex;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.single-orther__list-product__items-content__cart>a::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: translate(65%, 74%) rotate(-45deg);
+    background-color: var(--dark-primary-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.single-orther__list-product__items-content__cart>a>i {
+    margin: auto;
+}
