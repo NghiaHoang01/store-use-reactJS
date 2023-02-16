@@ -10,7 +10,6 @@ import Single from "../../page/single";
 import Cart from "../../page/cart";
 import ForgotPass from '../../page/forgotPass';
 import ResetPass from '../../page/resetPass';
-import Thank from "../../page/thank"
 import ValidateOTP from "../../page/validateOTP"
 import Error from "../../page/error404";
 import Result from "../../page/result"
@@ -27,8 +26,7 @@ const DefaultLayout = () => {
                 <Route path='/store-system' element={<StoreSystem />} />
                 <Route path='/single' element={<Single />} />
                 <Route path='/cart' element={<Cart />} />
-          <Route path='/result' element={<Result />} />
-                <Route path='/thank' element={<Thank />} />
+                <Route path='/result' element={<Result />} />
                 <Route path='/forgot-password' element={<ForgotPass />} />
                 <Route path='/reset-pass' element={<ResetPass />} />
                 <Route path='/reset-pass' element={<ResetPass />} />

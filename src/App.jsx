@@ -5,6 +5,7 @@ import DefaultLayout from './component/DefaultLayout';
 import ForgotPass from './page/forgotPass';
 import ResetPass from './page/resetPass';
 import Checkout from './page/checkout';
+import Thank from "./page/thank"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route path='/forgot-password' element={<ForgotPass />} />
           <Route path='/reset-pass' element={<ResetPass />} />
           <Route path='/reset-pass' element={<ResetPass />} />
+          <Route path='/thank' element={<Thank />} />
         </Routes>
       </BrowserRouter>
 
